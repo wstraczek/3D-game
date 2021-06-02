@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class RifleScript : MonoBehaviour {
     private float damage = 30f;
     private float range = 100f;
-    private int enemies = 5;
+    private int enemies = 8;
 
     public ParticleSystem muzzleFlash;
     public AudioSource shootSound;
