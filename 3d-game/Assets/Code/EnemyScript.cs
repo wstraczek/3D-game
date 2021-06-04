@@ -17,8 +17,4 @@ public class EnemyScript : MonoBehaviour
     void Die() {
         Destroy(gameObject);
     }
-
-    public float getHealth() {
-        return health;
-    }
 }

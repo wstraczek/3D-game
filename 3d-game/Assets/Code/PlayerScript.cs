@@ -9,7 +9,7 @@ public class PlayerScript : MonoBehaviour
     public Text healthText;
     public Text ballsText;
     private int balls = 5;
-    public AudioSource collect;
+    public AudioClip collect;
     void Start()
     {
         health = 3;
@@ -34,7 +34,8 @@ public class PlayerScript : MonoBehaviour
         }
 
         if (coll.gameObject.tag == "Ball") {
-            collect.Play();
+
+            GetComponent<AudioSource>().PlayOneShot(collect, 1);
             balls--;
             Destroy(coll.gameObject);
         }
